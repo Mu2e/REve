@@ -456,6 +456,7 @@ namespace mu2e
       world->AddElement(fGui);
       world->AddCommand("QuitRoot",  "sap-icon://log",  eventMgr_, "QuitRoot()");
       world->AddCommand("NextEvent", "sap-icon://step", eventMgr_, "NextEvent()");
+      world->AddCommand("PrintEveInfo", "sap-icon://step", fGui, "PrintEveInfo()");
       
       //world->AddCommand("PrintEventInfo", "sap-icon://step", fGui, "PrintEventInfo()");
       std::unique_lock lock{m_};
@@ -474,6 +475,9 @@ namespace mu2e
       fGui->feventid = eventid_;
       fGui->fsubrunid = subrunid_;
       fGui->frunid = runid_;
+      fGui->fcalocluster_tuple = data.calocluster_tuple;
+      fGui->fmctrack_tuple = data.mctrack_tuple;
+      fGui->ftrack_tuple = data.track_tuple;
       fGui->StampObjProps();
 
       if(diagLevel_ == 1) std::cout<<"[REveEventDisplay : process_single_event] -- extract event scene "<<std::endl;
