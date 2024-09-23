@@ -16,19 +16,19 @@ physics :
  analyzers : { @table::REveDis.analyzers}
 }
 
-physics.analyzers.REveEventDisplay.showCRV : true
-physics.analyzers.REveEventDisplay.showPS : false
-physics.analyzers.REveEventDisplay.showTS : false
-physics.analyzers.REveEventDisplay.filler.addKalSeeds : false
-physics.analyzers.REveEventDisplay.filler.addClusters : false
-physics.analyzers.REveEventDisplay.filler.addHits : false
-physics.analyzers.REveEventDisplay.filler.addCrvHits : false
-physics.analyzers.REveEventDisplay.filler.addTimeClusters : false
-physics.analyzers.REveEventDisplay.filler.addTrkHits : false
-physics.analyzers.REveEventDisplay.filler.addCosmicTrackSeeds : false
-physics.analyzers.REveEventDisplay.filler.addMCTraj : true
-physics.analyzers.REveEventDisplay.extracted : true
-physics.analyzers.REveEventDisplay.gdmlname :"REve/mu2e_extracted.gdml"
+physics.analyzers.EventDisplay.showCRV : true
+physics.analyzers.EventDisplay.showPS : false
+physics.analyzers.EventDisplay.showTS : false
+physics.analyzers.EventDisplay.filler.addKalSeeds : false
+physics.analyzers.EventDisplay.filler.addClusters : false
+physics.analyzers.EventDisplay.filler.addHits : false
+physics.analyzers.EventDisplay.filler.addCrvHits : false
+physics.analyzers.EventDisplay.filler.addTimeClusters : false
+physics.analyzers.EventDisplay.filler.addTrkHits : false
+physics.analyzers.EventDisplay.filler.addCosmicTrackSeeds : false
+physics.analyzers.EventDisplay.filler.addMCTraj : true
+physics.analyzers.EventDisplay.extracted : true
+physics.analyzers.EventDisplay.gdmlname :"REve/mu2e_extracted.gdml"
 physics.EndPath  : [ @sequence::REveDis.seqBase] 
 
 services.TFileService.fileName: "nts.owner.REve.version.sequencer.root"

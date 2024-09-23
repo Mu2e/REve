@@ -15,25 +15,25 @@ physics :
 {
  analyzers : { @table::REveDis.analyzers}
 }
-physics.analyzers.REveEventDisplay.showCRV : false
-physics.analyzers.REveEventDisplay.showPS : false
-physics.analyzers.REveEventDisplay.showTS : false
-physics.analyzers.REveEventDisplay.showSTM : true
-physics.analyzers.REveEventDisplay.showST : false
-physics.analyzers.REveEventDisplay.showCalo : false
-physics.analyzers.REveEventDisplay.showTracker : false
-physics.analyzers.REveEventDisplay.show2D : false
-physics.analyzers.REveEventDisplay.filler.addHelixSeeds : false
-physics.analyzers.REveEventDisplay.filler.addKalSeeds : false
-physics.analyzers.REveEventDisplay.filler.addClusters : false
-physics.analyzers.REveEventDisplay.filler.addHits : false
-physics.analyzers.REveEventDisplay.filler.addCrvHits : false
-physics.analyzers.REveEventDisplay.filler.addTimeClusters : false
-physics.analyzers.REveEventDisplay.filler.addTrkHits : false
-physics.analyzers.REveEventDisplay.filler.addCosmicTrackSeeds : false
-physics.analyzers.REveEventDisplay.filler.addMCTraj : false
-physics.analyzers.REveEventDisplay.seqMode : true
-physics.analyzers.REveEventDisplay.strawdisplay : false
+physics.analyzers.EventDisplay.showCRV : false
+physics.analyzers.EventDisplay.showPS : false
+physics.analyzers.EventDisplay.showTS : false
+physics.analyzers.EventDisplay.showSTM : true
+physics.analyzers.EventDisplay.showST : false
+physics.analyzers.EventDisplay.showCalo : false
+physics.analyzers.EventDisplay.showTracker : false
+physics.analyzers.EventDisplay.show2D : false
+physics.analyzers.EventDisplay.filler.addHelixSeeds : false
+physics.analyzers.EventDisplay.filler.addKalSeeds : false
+physics.analyzers.EventDisplay.filler.addClusters : false
+physics.analyzers.EventDisplay.filler.addHits : false
+physics.analyzers.EventDisplay.filler.addCrvHits : false
+physics.analyzers.EventDisplay.filler.addTimeClusters : false
+physics.analyzers.EventDisplay.filler.addTrkHits : false
+physics.analyzers.EventDisplay.filler.addCosmicTrackSeeds : false
+physics.analyzers.EventDisplay.filler.addMCTraj : false
+physics.analyzers.EventDisplay.seqMode : true
+physics.analyzers.EventDisplay.strawdisplay : false
 physics.EndPath  : [ @sequence::REveDis.seqBase] 
 
 services.TFileService.fileName: "nts.owner.REve.version.sequencer.root"

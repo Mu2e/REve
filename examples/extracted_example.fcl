@@ -14,42 +14,42 @@ physics :
   filters : { @table::REveDis.filters }
 }
 //geometry options
-physics.analyzers.REveEventDisplay.showCRV : true
-physics.analyzers.REveEventDisplay.showPS : false
-physics.analyzers.REveEventDisplay.showTS : false
-physics.analyzers.REveEventDisplay.showST : false
+physics.analyzers.EventDisplay.showCRV : true
+physics.analyzers.EventDisplay.showPS : false
+physics.analyzers.EventDisplay.showTS : false
+physics.analyzers.EventDisplay.showST : false
 //highlight CRV bars which are "hit"
-physics.analyzers.REveEventDisplay.addCRVBars : true
-physics.analyzers.REveEventDisplay.filler.addCrvHits : true
-physics.analyzers.REveEventDisplay.filler.addCrvClusters : true
+physics.analyzers.EventDisplay.addCRVBars : true
+physics.analyzers.EventDisplay.filler.addCrvHits : true
+physics.analyzers.EventDisplay.filler.addCrvClusters : true
 //for KinKal development
-physics.analyzers.REveEventDisplay.addKalInter : true
-physics.analyzers.REveEventDisplay.addTrkStrawHits : false
-physics.analyzers.REveEventDisplay.filler.addKalSeeds : true
-physics.analyzers.REveEventDisplay.filler.addTrkHits : false
+physics.analyzers.EventDisplay.addKalInter : true
+physics.analyzers.EventDisplay.addTrkStrawHits : false
+physics.analyzers.EventDisplay.filler.addKalSeeds : true
+physics.analyzers.EventDisplay.filler.addTrkHits : false
 //turn these off for now
-physics.analyzers.REveEventDisplay.filler.addClusters : false //CaloClusters
-physics.analyzers.REveEventDisplay.filler.addHits : false //ComboHits
-physics.analyzers.REveEventDisplay.filler.addTimeClusters : false
+physics.analyzers.EventDisplay.filler.addClusters : false //CaloClusters
+physics.analyzers.EventDisplay.filler.addHits : false //ComboHits
+physics.analyzers.EventDisplay.filler.addTimeClusters : false
 //pat rec CosmicTrackSeed
-physics.analyzers.REveEventDisplay.filler.addCosmicTrackSeeds : false
+physics.analyzers.EventDisplay.filler.addCosmicTrackSeeds : false
 
 // MC Trajectory:
-physics.analyzers.REveEventDisplay.filler.addMCTraj : true
+physics.analyzers.EventDisplay.filler.addMCTraj : true
 
 //setup extracted geometry
-physics.analyzers.REveEventDisplay.extracted : true
-//physics.analyzers.REveEventDisplay.gdmlname :"Offline/gen/gdml/mu2e_extracted.gdml"
-physics.analyzers.REveEventDisplay.gdmlname :"REve/gdml/mu2e_extracted.gdml"
+physics.analyzers.EventDisplay.extracted : true
+//physics.analyzers.EventDisplay.gdmlname :"Offline/gen/gdml/mu2e_extracted.gdml"
+physics.analyzers.EventDisplay.gdmlname :"REve/gdml/mu2e_extracted.gdml"
 
-physics.analyzers.REveEventDisplay.seqMode : true
+physics.analyzers.EventDisplay.seqMode : true
 //for print statements
-physics.analyzers.REveEventDisplay.diagLevel : 1
+physics.analyzers.EventDisplay.diagLevel : 1
 //the path
 physics.EndPath  : [ @sequence::REveDis.seqBase]
 physics.REvePath : @local::REvePath
 physics.trigger_paths :  ["REvePath" ]
-physics.analyzers.REveEventDisplay.SelectEvents : ["REvePath" ]
+physics.analyzers.EventDisplay.SelectEvents : ["REvePath" ]
 
 services.TFileService.fileName: "/dev/null"
 services.GeometryService.inputFile: "Offline/Mu2eG4/geom/geom_common_extracted.txt"

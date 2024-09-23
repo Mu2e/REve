@@ -17,56 +17,56 @@ physics :
 }
 
 //geometry options
-physics.analyzers.REveEventDisplay.showCRV : false
-physics.analyzers.REveEventDisplay.showPS : false
-physics.analyzers.REveEventDisplay.showTS : false
-physics.analyzers.REveEventDisplay.showDS : false
+physics.analyzers.EventDisplay.showCRV : false
+physics.analyzers.EventDisplay.showPS : false
+physics.analyzers.EventDisplay.showTS : false
+physics.analyzers.EventDisplay.showDS : false
 
 //highlight CRV bars which are "hit"
-physics.analyzers.REveEventDisplay.addCRVBars : true
+physics.analyzers.EventDisplay.addCRVBars : true
 
 //for KinKal development
-physics.analyzers.REveEventDisplay.addKalInter : false
+physics.analyzers.EventDisplay.addKalInter : false
 
 //show crystal hits in cluster
-physics.analyzers.REveEventDisplay.addCrystalHits : true
+physics.analyzers.EventDisplay.addCrystalHits : true
 
 //show pat rec helix
-physics.analyzers.REveEventDisplay.filler.addHelixSeeds : false
+physics.analyzers.EventDisplay.filler.addHelixSeeds : false
 
 //show final KalSeed
-physics.analyzers.REveEventDisplay.filler.addKalSeeds : true
+physics.analyzers.EventDisplay.filler.addKalSeeds : true
 
 //show CaloCluster
-physics.analyzers.REveEventDisplay.filler.addClusters : true
+physics.analyzers.EventDisplay.filler.addClusters : true
 
 //show ComboHits
-physics.analyzers.REveEventDisplay.filler.addHits : false // adds ComboHits
+physics.analyzers.EventDisplay.filler.addHits : false // adds ComboHits
 
 //show CRV reco information
-physics.analyzers.REveEventDisplay.filler.addCrvClusters : true
-physics.analyzers.REveEventDisplay.filler.addCrvHits : false
+physics.analyzers.EventDisplay.filler.addCrvClusters : true
+physics.analyzers.EventDisplay.filler.addCrvHits : false
 
 //show TimeClusters
-physics.analyzers.REveEventDisplay.filler.addTimeClusters : false
+physics.analyzers.EventDisplay.filler.addTimeClusters : false
 
 //highlight ComboHits (needs development)
-physics.analyzers.REveEventDisplay.addTrkStrawHits : true
+physics.analyzers.EventDisplay.addTrkStrawHits : true
 
 //add straight pat reco CosmicTrackSeed
-physics.analyzers.REveEventDisplay.filler.addCosmicTrackSeeds : false
+physics.analyzers.EventDisplay.filler.addCosmicTrackSeeds : false
 
 //add MCTrajecotry
-physics.analyzers.REveEventDisplay.filler.addMCTraj : true
+physics.analyzers.EventDisplay.filler.addMCTraj : true
 
 //allows movement through events in sequential order
-physics.analyzers.REveEventDisplay.seqMode : true
+physics.analyzers.EventDisplay.seqMode : true
 
 //highlights straws
-physics.analyzers.REveEventDisplay.strawdisplay : false
+physics.analyzers.EventDisplay.strawdisplay : false
 
 //print statements
-physics.analyzers.REveEventDisplay.diagLevel : 10
+physics.analyzers.EventDisplay.diagLevel : 10
 
 //the path
 physics.EndPath  : [ @sequence::REveDis.seqBase]

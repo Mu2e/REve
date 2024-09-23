@@ -15,20 +15,20 @@ physics :
 {
  analyzers : { @table::REveDis.analyzers}
 }
-physics.analyzers.REveEventDisplay.specifyTag : true
-physics.analyzers.REveEventDisplay.showCRV : false
-physics.analyzers.REveEventDisplay.showPS : false
-physics.analyzers.REveEventDisplay.showTS : false
-physics.analyzers.REveEventDisplay.filler.addKalSeeds : false
-physics.analyzers.REveEventDisplay.filler.addClusters : false
-physics.analyzers.REveEventDisplay.filler.addHits : false
-physics.analyzers.REveEventDisplay.filler.addCrvHits : false
-physics.analyzers.REveEventDisplay.filler.addTimeClusters : false
-physics.analyzers.REveEventDisplay.filler.addTrkHits : false
-physics.analyzers.REveEventDisplay.filler.addCosmicTrackSeeds : false
-physics.analyzers.REveEventDisplay.filler.addMCTraj : true
-physics.analyzers.REveEventDisplay.seqMode : true
-physics.analyzers.REveEventDisplay.filler.MCTrajectoryCollection : ["compressDetStepMCs"]
+physics.analyzers.EventDisplay.specifyTag : true
+physics.analyzers.EventDisplay.showCRV : false
+physics.analyzers.EventDisplay.showPS : false
+physics.analyzers.EventDisplay.showTS : false
+physics.analyzers.EventDisplay.filler.addKalSeeds : false
+physics.analyzers.EventDisplay.filler.addClusters : false
+physics.analyzers.EventDisplay.filler.addHits : false
+physics.analyzers.EventDisplay.filler.addCrvHits : false
+physics.analyzers.EventDisplay.filler.addTimeClusters : false
+physics.analyzers.EventDisplay.filler.addTrkHits : false
+physics.analyzers.EventDisplay.filler.addCosmicTrackSeeds : false
+physics.analyzers.EventDisplay.filler.addMCTraj : true
+physics.analyzers.EventDisplay.seqMode : true
+physics.analyzers.EventDisplay.filler.MCTrajectoryCollection : ["compressDetStepMCs"]
 physics.EndPath  : [ @sequence::REveDis.seqBase] 
 
 services.TFileService.fileName: "nts.owner.REve.version.sequencer.root"

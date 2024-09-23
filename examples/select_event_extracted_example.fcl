@@ -24,42 +24,42 @@ physics :
 }
 
 # general
-physics.analyzers.REveEventDisplay.diagLevel : 1
+physics.analyzers.EventDisplay.diagLevel : 1
 physics.EventSelectPath  : [ evtfilter]
 physics.trigger_paths : [EventSelectPath]
-physics.analyzers.REveEventDisplay.SelectEvents : [ "EventSelectPath" ]
+physics.analyzers.EventDisplay.SelectEvents : [ "EventSelectPath" ]
 physics.EndPath  : [ @sequence::REveDis.seqBase]
 physics.end_paths : [EndPath]
 services.TFileService.fileName: "nts.owner.REve.version.sequencer.root"
 services.GeometryService.inputFile: "Offline/Mu2eG4/geom/geom_common_extracted.txt"
 
 # geometry options
-physics.analyzers.REveEventDisplay.showCRV : true
-physics.analyzers.REveEventDisplay.showPS : false
-physics.analyzers.REveEventDisplay.showTS : false
-physics.analyzers.REveEventDisplay.showST : false
-physics.analyzers.REveEventDisplay.extracted : true
-physics.analyzers.REveEventDisplay.gdmlname :"Offline/gen/gdml/mu2e_extracted.gdml"
-physics.analyzers.REveEventDisplay.seqMode : true
+physics.analyzers.EventDisplay.showCRV : true
+physics.analyzers.EventDisplay.showPS : false
+physics.analyzers.EventDisplay.showTS : false
+physics.analyzers.EventDisplay.showST : false
+physics.analyzers.EventDisplay.extracted : true
+physics.analyzers.EventDisplay.gdmlname :"Offline/gen/gdml/mu2e_extracted.gdml"
+physics.analyzers.EventDisplay.seqMode : true
 
 # CRV
-physics.analyzers.REveEventDisplay.addCRVBars : true
-physics.analyzers.REveEventDisplay.filler.addCrvHits : true
-physics.analyzers.REveEventDisplay.filler.addCrvClusters : true
+physics.analyzers.EventDisplay.addCRVBars : true
+physics.analyzers.EventDisplay.filler.addCrvHits : true
+physics.analyzers.EventDisplay.filler.addCrvClusters : true
 
 # tracking
-physics.analyzers.REveEventDisplay.filler.addKalSeeds : true
-physics.analyzers.REveEventDisplay.addKalInter : true
-physics.analyzers.REveEventDisplay.filler.KalSeedCollection : ["KKLine"]
-physics.analyzers.REveEventDisplay.filler.addHits : false
-physics.analyzers.REveEventDisplay.filler.addTimeClusters : false
-physics.analyzers.REveEventDisplay.filler.addTrkHits : false
-physics.analyzers.REveEventDisplay.filler.addCosmicTrackSeeds : false
+physics.analyzers.EventDisplay.filler.addKalSeeds : true
+physics.analyzers.EventDisplay.addKalInter : true
+physics.analyzers.EventDisplay.filler.KalSeedCollection : ["KKLine"]
+physics.analyzers.EventDisplay.filler.addHits : false
+physics.analyzers.EventDisplay.filler.addTimeClusters : false
+physics.analyzers.EventDisplay.filler.addTrkHits : false
+physics.analyzers.EventDisplay.filler.addCosmicTrackSeeds : false
 
 # calorimeter
-physics.analyzers.REveEventDisplay.filler.addClusters : true
-physics.analyzers.REveEventDisplay.filler.CaloClusterCollection: ["CaloClusterMaker"]
+physics.analyzers.EventDisplay.filler.addClusters : true
+physics.analyzers.EventDisplay.filler.CaloClusterCollection: ["CaloClusterMaker"]
 
 # MC truth
-physics.analyzers.REveEventDisplay.filler.addMCTraj : true
+physics.analyzers.EventDisplay.filler.addMCTraj : true
 

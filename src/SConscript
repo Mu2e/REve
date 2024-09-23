@@ -41,7 +41,7 @@ elif len(x[2]) == 2:
   iletter=0
 
 else:
-  print ( 'Aborting building in REve/src/SConscript' )
+  print ( 'Aborting building in EventDisplay/src/SConscript' )
   print ( 'Cannot parse ROOT_VERSION: ', root_version )
   print ( 'Patch field must be 2 or 3 characters long' )
   Exit(2)
@@ -109,7 +109,7 @@ helper.make_dict_and_map()
 
 mainlib = helper.make_mainlib([userlibs], [ numeric_root_version ],)
 
-# helper.make_plugins( [ 'mu2e_REveEventDisplay',userlibs ] )
+# helper.make_plugins( [ 'mu2e_EventDisplay',userlibs ] )
 # Fixme: split into link lists for each module.
 helper.make_plugins( [
     mainlib,
